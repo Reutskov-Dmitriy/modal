@@ -1,0 +1,19 @@
+@font-face {
+	font-family: Lemon-Regular;
+	src: url(../assets/fonts/Lemon-Regular.ttf);
+	src: url(../assets/fonts/AnyConv.com__Lemon-Regular.woff);
+}
+@font-face {
+	font-family: PTSans-Bold;
+	src: url(../assets/fonts/AnyConv.com__PTSans-Bold.woff);
+}
+@font-face {
+	font-family: PTSans-Regular;
+	src: url(../assets/fonts/AnyConv.com__PTSans-Regular.woff);
+}
+
+:root{
+	--font-family-lr: Lemon-Regular, sans-serif;
+	--font-family-b: PTSans-Bold, sans-serif;
+	--font-family-r: PTSans-Regular, sans-serif;
+}

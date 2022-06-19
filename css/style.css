@@ -1,0 +1,140 @@
+body{
+	font-family: var(--font-family-r);
+	background-color: rgb(226, 237, 209);
+}
+h2{
+	font-family: var(--font-family-b);
+	font-size: 2vw;
+	
+}
+.wrapper{
+	max-width: 100vw;
+	/* height: 100vw; */
+	margin: 0 auto;
+	
+}
+
+header{
+	min-height: 5vw;
+	min-width: 80vw;
+	margin: 0 auto;
+	background-color: rgb(214, 229, 183);
+	padding: 0 4vw;
+}
+.header-row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo{
+	display: flex;
+	align-items: center;
+}
+.header__logo img{
+	width: 4vw;
+	height: 4vw;
+}
+.header__title{
+	font-family: var(--font-family-lr);
+	font-size: 2vw;
+	color: rgb(49, 62, 26);
+	text-shadow: 0 10px 10px rgb(248, 222, 131);
+	align-self: flex-end;
+	
+}
+
+/* Button open modal panel */
+#modal-btn{
+	background-color: rgb(173, 186, 146);
+	font-family: var(--font-family-b);
+	font-size: 24px;
+	display: flex;
+	width: 8vw;
+	height: 3vw;
+	border-radius: 2vw;
+	border: none;
+
+}
+
+#modal-btn>label{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.modal-btn__icon{
+	width: 2vw;
+	height: 2.2vw;
+	align-self: flex-start;
+	margin-right: -0.5vw;
+}
+
+#modalToggle{
+	display: none;
+}
+
+.modal-glass{
+	position: fixed;
+	inset: 0;
+
+	z-index: 9999;
+	background-color: rgba(218, 238, 232,0.8);
+	
+}
+
+.modal-login__content{
+	width: 35vw;
+	height: 35vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	z-index: 1;
+	background-color: rgba(224, 235, 203, 1);
+	border-radius: 1vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1vw 2vw;
+}
+
+.modal-glass>label[for="modalToggle"] {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	
+	
+}
+
+#emaile,
+#password{
+	margin: 1vw 0;
+	width: 30vw;
+	height: 3vw;
+	border: 1px solid rgb(135, 131, 131);
+	border-radius: 1vw;
+	padding: 1vw;
+}
+
+.submit-btn{
+	width: 10vw;
+	height: 3vw;
+	border-radius: 0.5vw;
+	border: none;
+}
+
+:not(:checked) + .modal-glass {
+	display: none;
+}
+
+.modal-login__content p{
+ color: rgb(135, 131, 131);
+}
+
+.modal-login__footer{
+	text-align: center;
+}
